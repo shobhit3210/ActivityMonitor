@@ -18,7 +18,6 @@ async function getTeamMemberActivity(question) {
   ]);
 
   const issues = await getAssignedIssues(jiraAccountId);
-
   return await generateResponse(name, issues, commits, prs);
 }
 
