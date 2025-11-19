@@ -1,22 +1,3 @@
-// function extractName(question) {
-//   const lower = question.toLowerCase();
-//   const triggers = ['what is', 'show me', 'what has', 'tell me about', 'activity for', `what's`];
-//   let cleaned = question;
-//   for (const t of triggers) {
-//     cleaned = cleaned.replace(new RegExp(t, 'gi'), '').trim();
-//   }
-
-//   // Remove common suffixes
-//   cleaned = cleaned.replace(/working on.*/i, '')
-//                    .replace(/recent activity.*/i, '')
-//                    .replace(/this week.*/i, '')
-//                    .replace(/\?$/, '')
-//                    .trim();
-
-//   // Assume the remaining is the name (supports first name or full name)
-//   return cleaned.trim() || null;
-// }
-
 function extractName(question) {
   if (!question || typeof question !== 'string') {
     return null;

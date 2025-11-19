@@ -8,5 +8,3 @@ Ask natural questions about what team members are working on – pulls live data
 2. `npm install`
 3. `npm start`
 4. Open http://localhost:3000
-
-Works with or without OpenAI key (falls back to templates).
